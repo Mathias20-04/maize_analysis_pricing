@@ -1,0 +1,23 @@
+{
+    "title": "Malawi Smallholder Maize Pricing Dataset 2025",
+    "group": ["Matthias Mphande", "Team Member 2", "Team Member 3"],
+    "date": "2025-11-15",
+    "generation_method": "Farmer Surveys via Google Forms",
+    "parameters": {
+        "n_samples": 250,
+        "districts": ["Dedza", "Lilongwe", "Mchinji"],
+        "seed": 42,
+        "survey_tool": "Google Forms",
+        "analysis_tool": "Python pandas"
+    },
+    "source": "Primary data collection - digital surveys",
+    "license": "CC-BY-NC-4.0",
+    "contact": "bict2023@my.mzuni.ac.mw",
+    "data_collection_steps": [
+        "Survey design and pilot testing",
+        "Digital distribution via Google Forms",
+        "Automatic data collection in Google Sheets",
+        "CSV export and data validation",
+        "Statistical analysis with Python"
+    ]
+}
