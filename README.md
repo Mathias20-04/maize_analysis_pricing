@@ -1,4 +1,4 @@
-```bash
+
 # Malawi Farmer Market Access Analysis
 
 ## Project Overview
@@ -40,7 +40,7 @@ pandas, numpy, scipy, matplotlib, seaborn
 See requirements.txt for complete list
 
 # Reproducibility
-```bash
+
 This project follows reproducible research principles with:
 
 Version-controlled code
@@ -52,7 +52,7 @@ Clear documentation
 Environment management
 
 # Contact
-```bash
+
 
 Researcher: Group 3
 
