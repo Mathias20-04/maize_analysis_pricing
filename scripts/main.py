@@ -13,6 +13,8 @@ def _load_script(name):
     base = pathlib.Path(__file__).parent
     path = base / f"{name}.py"
     spec = importlib.util.spec_from_file_location(name, str(path))
+    if spec is None or spec.loader is None:
+        raise ImportError(f"Cannot load module {name!r} from {path}")
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module

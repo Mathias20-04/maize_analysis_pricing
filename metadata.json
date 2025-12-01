@@ -1,23 +1,25 @@
 {
-    "title": "Malawi Smallholder Maize Pricing Dataset 2025",
-    "group": ["Matthias Mphande", "Team Member 2", "Team Member 3"],
+    "title": "Malawi Smallholder Farmer Market Access Study 2025",
+    "group": ["Matthias Mphande", "William Msoko", "Shalon Jailosi", "Peter Manda", "Deborah Nyirenda", "Bydon Mwale"],
     "date": "2025-11-15",
     "generation_method": "Farmer Surveys via Google Forms",
     "parameters": {
-        "n_samples": 250,
-        "districts": ["Dedza", "Lilongwe", "Mchinji"],
+        "n_samples": 251,
+        "districts": ["Dedza", "Lilongwe", "Mangochi", "Blantyre", "Karonga", "Mzimba", "Nkhatabay"],
         "seed": 42,
         "survey_tool": "Google Forms",
-        "analysis_tool": "Python pandas"
+        "analysis_tool": "Python pandas, scipy, seaborn"
     },
     "source": "Primary data collection - digital surveys",
     "license": "CC-BY-NC-4.0",
-    "contact": "bict2023@my.mzuni.ac.mw",
+    "contact": "mphandemathias0@gmail.com",
+    "research_focus": "Market access barriers and digital solution preferences for smallholder farmers",
     "data_collection_steps": [
         "Survey design and pilot testing",
         "Digital distribution via Google Forms",
         "Automatic data collection in Google Sheets",
         "CSV export and data validation",
-        "Statistical analysis with Python"
+        "Statistical analysis with Python",
+        "Visualization and reporting"
     ]
 }
