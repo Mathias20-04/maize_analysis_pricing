@@ -1,30 +1,87 @@
-# Maize Price Analysis for Smallholder Farmers in Malawi
+# Malawi Farmer Market Access Analysis
 
 ## Project Overview
-This project analyzes factors influencing maize selling prices among smallholder farmers in Central Malawi using survey data from 250 farmers.
+This project analyzes market access barriers and digital solution preferences among smallholder farmers in Malawi using survey data from 200 farmers across 8 districts. The research investigates price disparities, transport challenges, and technology adoption readiness to inform rural development policies.
 
 ## Quick Start
-1. Download this folder
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run full analysis: `python main.py`
-4. Check `results/` fopython scripts/main.pylder for outputs
-
-## Detailed Setup
-
-### Prerequisites
-- Python 3.10 or higher
-- pip package manager
-
-### Installation Steps
-```bash
 # Clone this repository
 git clone https://github.com/Mathias20-04/maize_analysis_pricing.git
 cd maize_analysis_pricing
 
-# Create virtual environment (recommended)
-python -m maize_env venv
-source maize_env\scripts\activate  # On Windows: maize_env\scripts\activate
-#how to run it 
-python scripts/main.py
+# Create and activate virtual environment (recommended)
+python -m venv maize_env
+maize_env\Scripts\activate  # On Windows
+# On Mac/Linux: source maize_env/bin/activate
+
 # Install required packages
 pip install -r requirements.txt
+
+# Run full analysis pipeline
+python scripts/main.py
+
+## project structure
+maize_analysis_pricing/
+├── scripts/                 # Python analysis pipeline
+│   ├── main.py             # Main pipeline controller
+│   ├── 01_data_validation.py
+│   ├── 02_data_analysis.py
+│   └── 03_visualization.py
+├── data/
+│   ├── raw/                # Original survey data
+│   └── processed/          # Cleaned and validated data
+├── results/                # Generated outputs (tables, figures)
+├── requirements.txt        # Python dependencies
+├── metadata.json          # Project metadata
+└── README.md
+
+## Research Focus
+ Market Access Barriers: Transport costs, infrastructure limitations, middlemen
+
+ Economic Analysis: Price differentials between local and urban markets
+
+Technology Adoption: Mobile app willingness and digital literacy
+
+Policy Recommendations: Evidence-based solutions for rural development
+
+## Key Findings
+ Significant price differences (182.50 MWK average) between local and city markets
+
+ Transport costs identified as primary barrier by 36% of farmers
+
+ 44% of farmers prefer mobile app solutions for market information
+
+ Challenges are consistent across all districts (no significant regional variation)
+
+
+
+## Outputs
+After running the pipeline, check the results/ folder for:
+
+results/tables/ - Statistical analysis and frequency tables
+
+results/figures/ - Data visualizations and charts
+
+## Dependencies
+Python 3.10+
+
+pandas, numpy, scipy, matplotlib, seaborn
+
+See requirements.txt for complete list
+
+# Reproducibility
+This project follows reproducible research principles with:
+
+Version-controlled code
+
+Automated data processing pipeline
+
+Clear documentation
+
+Environment management
+
+# Contact
+Researcher: Group 3
+
+Email: mphandemathias0@gmail.com
+
+Repository: https://github.com/Mathias20-04/maize_analysis_pricing
